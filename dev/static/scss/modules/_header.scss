@@ -1,0 +1,46 @@
+.header {
+	font-family: $fontHeader;
+	text-transform: uppercase;
+	color: $colorHeader;
+	background: $bgHeader;
+	padding: 57px 0;
+	&__logo {
+		font-size: 1.5rem;
+		color: $colorHeader;
+	}
+	&__nav {
+		float: right;
+	}
+	&__link {
+		margin-left: 25px;
+		float: left;
+		color: $colorHeader;
+		position: relative;
+		line-height: 1.714;
+		&.active {
+			&:before {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				width: 50%;
+				height: 3px;
+				background: #292929;
+				bottom: -21px;
+				left: -25%;
+				transform: translateX(50%);
+			}
+			&:after {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				width: 50%;
+				height: 3px;
+				background: #fcac45;
+				bottom: -21px;
+				left: 75%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	
+}
