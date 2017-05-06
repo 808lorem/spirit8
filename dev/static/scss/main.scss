@@ -19,8 +19,11 @@
 // Стили шапки
 @import 'modules/_header';
 
-// Стили шапки
+// Стили верхнего баннера
 @import 'modules/_top-banner';
+
+// Стили "О нас"
+@import 'modules/_about';
 
 // Стили главной страницы
 @import 'page/_index';

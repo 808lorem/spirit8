@@ -16,14 +16,14 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="row">
           <div class="col-lg-3"><a class="header__logo" href="javascript:void(0);"><span>Spirit8</span></a></div>
           <div class="col-lg-9">
             <nav class="header__nav">
               <ul class="header__list"><a class="header__link active" href="javascript:void(0);">
-                  <li class="header__item">Home</li></a><a class="header__link" href="javascript:void(0);">
+                  <li class="header__item">Home</li></a><a class="scroll-link header__link" href="#about">
                   <li class="header__item">About</li></a><a class="header__link" href="javascript:void(0);">
                   <li class="header__item">SERVICES</li></a><a class="header__link" href="javascript:void(0);">
                   <li class="header__item">portfolio</li></a><a class="header__link" href="javascript:void(0);">
@@ -34,13 +34,32 @@
         </div>
       </div>
     </header>
-    <section class="top-banner">
+    <section class="top-banner" id="top-banner">
       <div class="container top-banner__container">
         <div class="row">
           <div class="col-lg-12"><span class="top-banner__title">welcome on <span class="top-banner__title_bold">spirit8</span></span><span class="top-banner__descr">We are a digital agency with <span class="top-banner__descr_bold">years of experience </span>and with <span class="top-banner__descr_bold">extraordinary people</span></span></div>
         </div>
       </div>
-      <div class="top-banner__arrow"><a class="top-banner__arrow_link" href="javascript:void(0);"></a></div>
+      <div class="top-banner__arrow"><a class="scroll-link top-banner__arrow_link" href="#about" id="top-banner__arrow_link"></a></div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about__container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about__wrap-img"><img class="about__img" src="static/img/general/about__img.png" alt="about-img"></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about__wrap-text"><span class="about__title">Some words <span class="about__title_bold">about us</span></span>
+              <p class="about__text">We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
+              <ul class="about__list">
+                <li class="about__item">Mission - <span class="about__item_italic">We deliver uniqueness and quality</span></li>
+                <li class="about__item">Skills -<span class="about__item_italic">Delivering fast and excellent results</span></li>
+                <li class="about__item">Clients -<span class="about__item_italic">Satisfied clients thanks to our experience</span></li>
+              </ul><a class="about__link" href="javascript:void(0);">Browse our work</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
   <footer></footer><!--[if lt IE 9]>

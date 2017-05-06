@@ -1996,7 +1996,8 @@ html {
   font-size: 14px; }
 
 body {
-  font-family: "OpenSansRegular", sans-serif; }
+  font-family: "OpenSansRegular", sans-serif;
+  color: #6c6c6c; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -2070,7 +2071,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1170px;
   margin: 0 auto; }
 
 *::-webkit-input-placeholder {
@@ -2178,7 +2179,7 @@ button {
         content: '';
         display: block;
         background-image: url("../img/sprite/sprite.png");
-        background-position: 0px 0px;
+        background-position: 0px -30px;
         width: 11px;
         height: 12px;
         position: absolute;
@@ -2188,8 +2189,98 @@ button {
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
 
+.about {
+  font-size: 1.125rem;
+  padding: 101px 0 5px; }
+  .about__wrap-text {
+    padding: 0 98px; }
+  .about__title {
+    color: #222222;
+    font-size: 2.125rem;
+    font-weight: 400;
+    line-height: 1.097;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    margin: 33px auto; }
+    .about__title_bold {
+      font-family: "OpenSansBold", sans-serif; }
+    .about__title:before {
+      content: 'about us';
+      display: block;
+      color: #636363;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.865;
+      position: absolute;
+      top: -37px; }
+    .about__title:after {
+      content: '';
+      display: block;
+      height: 5px;
+      width: 99px;
+      background: #fcac45;
+      position: absolute;
+      bottom: -20px; }
+  .about__text {
+    font-weight: 400;
+    line-height: 1.389;
+    padding: 10px 0 40px; }
+  .about__list {
+    padding-left: 25px;
+    margin-bottom: 40px;
+    display: block; }
+  .about__item {
+    font-family: "OpenSansSemiBold", sans-serif;
+    color: #5a5a5a;
+    margin-bottom: 6px;
+    position: relative; }
+    .about__item:last-child {
+      margin-bottom: 0; }
+    .about__item_italic {
+      font-size: 1rem;
+      font-family: "OpenSansItalic", sans-serif; }
+    .about__item:before {
+      content: '';
+      display: block;
+      background-image: url("../img/sprite/sprite.png");
+      background-position: 0px 0px;
+      width: 14px;
+      height: 15px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: -24px; }
+  .about__link {
+    font-family: "OpenSansSemiBold", sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #ffffff;
+    color: #616161;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 12px 27px 12px 40px;
+    text-transform: uppercase;
+    position: relative; }
+    .about__link:after {
+      content: '';
+      display: block;
+      background-image: url("../img/sprite/sprite.png");
+      background-position: -29px 0px;
+      width: 14px;
+      height: 12px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 22px; }
+
 footer {
-  height: 500px; }
+  height: 1000px; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
