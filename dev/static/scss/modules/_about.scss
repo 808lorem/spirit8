@@ -1,0 +1,92 @@
+.about {
+	font-size: 1.125rem;
+	padding: 101px 0 5px;
+	&__wrap-text {
+		padding: 0 98px;
+	}
+	&__title {
+		color:  #222222;
+		font-size: 2.125rem;
+		font-weight: 400;
+		line-height: 1.097;
+		text-transform: uppercase;
+		display: block;
+		position: relative;
+		margin: 33px auto;
+		&_bold {
+			font-family: $fontTextBold;
+		}
+		&:before {
+			content: 'about us';
+			display: block;
+			color:  #636363;
+			font-size: 1.25rem;
+			font-weight: 400;
+			line-height: 1.865;
+			position: absolute;
+			top: -37px;
+		}
+		&:after {
+			content: '';
+			display: block;
+			height: 5px;
+			width: 99px;
+			background: #fcac45;
+			position: absolute;
+			bottom: -20px;
+		}
+	}
+	&__text {
+		font-weight: 400;
+		line-height: 1.389;
+		padding: 10px 0 40px;
+	}
+	&__list {
+		padding-left: 25px;
+		margin-bottom: 40px;
+		display: block;
+	}
+	&__item {
+		font-family: $fontTextSemiBold;
+		color: $colorAboutList;
+		margin-bottom: 6px;
+		position: relative;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&_italic {
+			font-size: 1rem;
+			font-family: $fontTextItalic;
+		}
+		&:before {
+			content: '';
+			display: block;
+			@include sprite($s-about__list);
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: -24px;
+		}
+	}
+	&__link {
+		font-family: $fontTextSemiBold;
+		border: 1px solid rgba(0, 0, 0, .5);
+		border-radius: 2px;
+		background-color: #ffffff;
+		color:  #616161;
+		font-size: 0.75rem;
+		font-weight: 600;
+		padding: 12px 27px 12px 40px;
+		text-transform: uppercase;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			@include sprite($s-about__icon-btn);
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 22px;
+		}
+	}
+}
