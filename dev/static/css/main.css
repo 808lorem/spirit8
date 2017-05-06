@@ -1996,10 +1996,15 @@ html {
   font-size: 14px; }
 
 body {
-  font-family: mainFont; }
+  font-family: "OpenSansRegular", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0; }
+  margin: 0;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 2.75rem;
+  font-family: "OpenSansLight", sans-serif; }
 
 ul, li {
   margin: 0;
@@ -2027,8 +2032,7 @@ textarea {
   resize: none; }
 
 section {
-  position: relative;
-  margin-bottom: 20px; }
+  position: relative; }
 
 input,
 select,
@@ -2086,7 +2090,9 @@ button {
   text-transform: uppercase;
   color: #fff;
   background: #080808;
-  padding: 57px 0; }
+  padding: 57px 0;
+  -webkit-box-sizing: padding-box;
+          box-sizing: padding-box; }
   .header__logo {
     font-size: 1.5rem;
     color: #fff; }
@@ -2122,6 +2128,68 @@ button {
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%); }
+
+.top-banner {
+  background: #080808;
+  padding: 20px 0;
+  position: relative; }
+  .top-banner__container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%; }
+  .top-banner__title {
+    font-family: "OpenSansLight", sans-serif;
+    color: #999999;
+    font-size: 2.75rem;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    text-transform: uppercase; }
+    .top-banner__title_bold {
+      font-family: "OpenSansBold", sans-serif;
+      color: #fcad45; }
+  .top-banner__descr {
+    color: rgba(255, 255, 255, 0.74902);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    display: block; }
+    .top-banner__descr_bold {
+      font-family: "OpenSansBold", sans-serif; }
+  .top-banner__arrow {
+    position: absolute;
+    bottom: 5%;
+    width: 100%; }
+    .top-banner__arrow_link {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border: 2px solid rgba(255, 255, 255, 0.74902);
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      position: relative;
+      margin: 20px auto; }
+      .top-banner__arrow_link:after {
+        content: '';
+        display: block;
+        background-image: url("../img/sprite/sprite.png");
+        background-position: 0px 0px;
+        width: 11px;
+        height: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+
+footer {
+  height: 500px; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */

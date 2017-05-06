@@ -4,11 +4,17 @@ html {
 }
 
 body {
-	font-family: mainFont;
+	font-family: $mainFont;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 2.75rem;
+	font-family: $fontTitleLight;
 }
 
 ul,li {
@@ -45,7 +51,6 @@ textarea {
 
 section {
 	position: relative;
-	margin-bottom: 20px;
 }
 
 input,

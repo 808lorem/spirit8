@@ -4,6 +4,7 @@
 	color: $colorHeader;
 	background: $bgHeader;
 	padding: 57px 0;
+	box-sizing: padding-box;
 	&__logo {
 		font-size: 1.5rem;
 		color: $colorHeader;
