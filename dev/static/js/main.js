@@ -41,17 +41,12 @@ $(document).ready(function(){
 	});
 	
 	
-	// Изменить href='#id' кнопки вниз
-	// в зависимости от #id соседней секции
-	function idNextSection () {
-		var getvalue = $('#top-banner__arrow_link').attr('href'),
-			nextAtteId = '#' + $('#top-banner').next().attr('id');
-		
-		if(getvalue !== nextAtteId) {
-			$('#top-banner__arrow_link').attr('href', nextAtteId)
-		}
-	};
-	
-	idNextSection();
+	$('.scroll-down').click(function () {
+		var win = $(window).height();
+		$('body,html').animate({
+			scrollTop: win
+		}, 1000);
+		return false;
+	});
 
 });
