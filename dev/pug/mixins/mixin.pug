@@ -1,0 +1,16 @@
+mixin slide-team(src, username, status, text)
+	.team__img-wrap
+		img.team__img(src=src alt=username)
+	span.team__username= username
+	span.team__status= status
+	p.team__text= text
+
+mixin img-clients(name, href)
+	a(href=href target="_blank")
+		img(src='static/img/content/'+name+'.png' alt=name)
+		
+
+mixin img-portfolio(name)
+	.col-lg-3.portfolio__col.flavor.all(class=name)
+		a.portfolio__wrap-img
+			img(src='static/img/content/'+name+'.jpg' alt=name).portfolio__img
