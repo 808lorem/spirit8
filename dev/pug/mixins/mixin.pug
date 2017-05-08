@@ -10,7 +10,21 @@ mixin img-clients(name, href)
 		img(src='static/img/content/'+name+'.png' alt=name)
 		
 
-mixin img-portfolio(name)
+mixin img-portfolio(name, descr)
 	.col-lg-3.portfolio__col.flavor.all(class=name)
-		a.portfolio__wrap-img
+		.portfolio__wrap-img
 			img(src='static/img/content/'+name+'.jpg' alt=name).portfolio__img
+			.portfolio__more
+				span.portfolio__more_title Trend and fashion
+				if name == 'web'
+					span.portfolio__more_descr Website design
+				if name == 'mobile'
+					span.portfolio__more_descr Mobile design
+				if name == 'photograpy'
+					span.portfolio__more_descr Photograpy design
+				a(href="#img-"+name).portfolio__more_btn.popup-link
+				
+
+mixin images(src)
+	.popup.mfp-hide(id='img-'+src)
+		img(src='static/img/content/'+src+'.jpg').popup__img

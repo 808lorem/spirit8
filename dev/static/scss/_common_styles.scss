@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,h6 {
 	color: $colorTitleDark;
 	position: relative;
 	margin-bottom: 91px;
+	font-weight: 300;
 	&:before {
 		content: '';
 		display: block;
@@ -48,6 +49,7 @@ h1,h2,h3,h4,h5,h6 {
 	}
 	&__bold {
 		font-family: $fontTextSemiBold;
+		font-weight: 600;
 	}
 }
 
@@ -106,6 +108,7 @@ input,
 select,
 button {
 	outline: none;
+	
 }
 
 *, *:before, *:after {

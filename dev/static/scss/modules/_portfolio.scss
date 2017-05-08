@@ -42,11 +42,69 @@
 		display: inline-block;
 		width: 263px;
 		height: 237px;
+		position: relative;
+		&:hover {
+			.portfolio__more {
+				display: block;
+				transition: all linear 1s;
+			}
+		}
 	}
 	&__img {
 		object-fit: none;
 		object-position: 22% 0%;
 		height: 100%;
 		width: 100%;
+	}
+	&__more {
+		display: none;
+		transition: all linear 1s;
+		height: 100%;
+		width: 100%;
+		background: $bgPortfolioHover;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		padding: 66px 25px;
+		font-family: $fontTextSemiBold;
+		&_title {
+			display: block;
+			text-align: center;
+			color: $colorTitleWhite;
+			font-size: 1.25rem;
+			font-weight: 600;
+			line-height: 1.2;
+			text-transform: uppercase;
+		}
+		&_descr {
+			display: block;
+			text-align: center;
+			color: $colorPortfolioHoverDescr;
+			font-size: 0.875rem;
+			font-weight: 600;
+			line-height: 1.714;
+		}
+		&_btn {
+			display: block;
+			width: 40px;
+			height: 40px;
+			border: 1px solid $bgOrange;
+			background: transparent;
+			border-radius: 50%;
+			position: relative;
+			margin: 28px auto;
+			&:after {
+				content: '+';
+				display: block;
+				color: $colorOrange;
+				font-size: 2rem;
+				font-family: $fontTitleLight;
+				position: absolute;
+				top: 48%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
 	}
 }

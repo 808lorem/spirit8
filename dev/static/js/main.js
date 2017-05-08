@@ -15,7 +15,7 @@ $(document).ready(function(){
 	
 	var headerHeightSum = $('#header').height() + headerPaddingTop + headerPaddingBottom + headerMarginTop + headerMarginBottom;
 	
-		// установим обработчик события resize
+	// установим обработчик события resize
 	$(window).resize(function(){
 		var h_w = $(window).height();
 		var topBannerHeight = h_w - headerHeightSum;
@@ -26,7 +26,6 @@ $(document).ready(function(){
 	$(window).resize();
 	
 	
-	// Скрол
 	$('.scroll-link').click(function() {
 	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		var target = $(this.hash);
@@ -88,9 +87,27 @@ $(document).ready(function(){
 //		]
 	});
 	
+	$('.js-slider__testimonials').slick({
+		dots: true,
+		arrows: false,
+		speed: 900,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+//		responsive: [
+//		{
+//		  breakpoint: 1024,
+//		  settings: {
+//			slidesToShow: 3,
+//			slidesToScroll: 3,
+//			infinite: true,
+//			dots: true
+//		  }
+//		}
+//		]
+	});
+	
 	
 	$(function() {
-
 		var newSelection = "";
 
 		$("#flavor-nav a").click(function(){
@@ -108,6 +125,10 @@ $(document).ready(function(){
 			$("#all-flavors").fadeTo(600, 1);
 
 		});
-
+	});
+	
+	
+	$('.popup-link').magnificPopup({
+		type: 'inline',
 	});
 });

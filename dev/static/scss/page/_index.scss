@@ -1,5 +1,6 @@
 .team,
-.clients {
+.clients,
+.testimonials {
 	.slick-dots {
 		bottom: -83px;
 		li {
@@ -21,5 +22,16 @@
 				}
 			}
 		}
+	}
+}
+
+
+.popup {
+	position: relative;
+	&__img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
