@@ -1,5 +1,5 @@
 .top-banner {
-	background: $bgTopBanner;
+	background: $bgDark;
 	padding: 20px 0;
 	position: relative;
 	&__container {
@@ -19,7 +19,7 @@
 		text-transform: uppercase;
 		&_bold {
 			font-family: $fontTitleBold;
-			color: #fcad45;
+			color: $colorOrange;
 		}
 	}
 	&__descr {

@@ -2,7 +2,7 @@
 	font-family: $fontHeader;
 	text-transform: uppercase;
 	color: $colorHeader;
-	background: $bgHeader;
+	background: $bgDark;
 	padding: 57px 0;
 	box-sizing: padding-box;
 	&__logo {
@@ -18,6 +18,10 @@
 		color: $colorHeader;
 		position: relative;
 		line-height: 1.714;
+		&:focus,
+		&:hover {
+			color: $colorHeader;
+		}
 		&.active {
 			&:before {
 				content: '';
@@ -36,7 +40,7 @@
 				position: absolute;
 				width: 50%;
 				height: 3px;
-				background: #fcac45;
+				background: $bgOrange;
 				bottom: -21px;
 				left: 75%;
 				transform: translateX(-50%);

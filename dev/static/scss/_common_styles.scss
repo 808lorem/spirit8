@@ -11,11 +11,44 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	text-transform: uppercase;
+	color: $colorTitleDark;
+	text-align: center;
 }
 
-h1 {
+.title {
 	font-size: 2.75rem;
 	font-family: $fontTitleLight;
+	color: $colorTitleDark;
+	position: relative;
+	margin-bottom: 91px;
+	&:before {
+		content: '';
+		display: block;
+		width: 99px;
+		height: 5px;
+		background: $bgOrange;
+		position: absolute;
+		bottom: -25px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&:after {
+		content: '';
+		display: block;
+		background: $bgTitleLine;
+		width: 67px;
+		height: 5px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -44px;
+	}
+	&__white {
+		color: $colorTitleWhite;
+	}
+	&__bold {
+		font-family: $fontTextSemiBold;
+	}
 }
 
 ul,li {
@@ -28,12 +61,27 @@ p {
 	margin: 0;
 }
 
+.text {
+	&__italic {
+		font-family: $fontTextItalic;
+		font-size: 1rem;
+		line-height: 1.5;
+		text-align: center;
+		font-style: italic;
+	}
+}
+
 a {
+	font-family: $mainFont;
+	color: $mainColor;
+	cursor: pointer;
     text-decoration: none;
 	&:hover,
-	&:focus {
-		color: white;
+	&:focus,
+	&:visited {
+		color: $mainColor;
 		text-decoration: none;
+		outline: none;
 	}
 }
 
@@ -62,6 +110,10 @@ button {
 
 *, *:before, *:after {
 	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
 }
 
 .hide {

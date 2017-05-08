@@ -2001,11 +2001,44 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #222;
+  text-align: center; }
 
-h1 {
+.title {
   font-size: 2.75rem;
-  font-family: "OpenSansLight", sans-serif; }
+  font-family: "OpenSansLight", sans-serif;
+  color: #222;
+  position: relative;
+  margin-bottom: 91px; }
+  .title:before {
+    content: '';
+    display: block;
+    width: 99px;
+    height: 5px;
+    background: #fcac45;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .title:after {
+    content: '';
+    display: block;
+    background: rgba(252, 172, 69, 0.7);
+    width: 67px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: -44px; }
+  .title__white {
+    color: #fff; }
+  .title__bold {
+    font-family: "OpenSansSemiBold", sans-serif; }
 
 ul, li {
   margin: 0;
@@ -2015,11 +2048,22 @@ ul, li {
 p {
   margin: 0; }
 
+.text__italic {
+  font-family: "OpenSansItalic", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  font-style: italic; }
+
 a {
+  font-family: "OpenSansRegular", sans-serif;
+  color: #6c6c6c;
+  cursor: pointer;
   text-decoration: none; }
-  a:hover, a:focus {
-    color: white;
-    text-decoration: none; }
+  a:hover, a:focus, a:visited {
+    color: #6c6c6c;
+    text-decoration: none;
+    outline: none; }
 
 audio,
 canvas,
@@ -2043,6 +2087,9 @@ button {
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+*:focus {
+  outline: none; }
 
 .hide {
   display: none; }
@@ -2105,6 +2152,8 @@ button {
     color: #fff;
     position: relative;
     line-height: 1.714; }
+    .header__link:focus, .header__link:hover {
+      color: #fff; }
     .header__link.active:before {
       content: '';
       display: inline-block;
@@ -2152,7 +2201,7 @@ button {
     text-transform: uppercase; }
     .top-banner__title_bold {
       font-family: "OpenSansBold", sans-serif;
-      color: #fcad45; }
+      color: #fcac45; }
   .top-banner__descr {
     color: rgba(255, 255, 255, 0.74902);
     font-size: 1.25rem;
@@ -2179,7 +2228,7 @@ button {
         content: '';
         display: block;
         background-image: url("../img/sprite/sprite.png");
-        background-position: 0px -30px;
+        background-position: -142px 0px;
         width: 11px;
         height: 12px;
         position: absolute;
@@ -2244,7 +2293,7 @@ button {
       content: '';
       display: block;
       background-image: url("../img/sprite/sprite.png");
-      background-position: 0px 0px;
+      background-position: -112px -70px;
       width: 14px;
       height: 15px;
       position: absolute;
@@ -2269,7 +2318,7 @@ button {
       content: '';
       display: block;
       background-image: url("../img/sprite/sprite.png");
-      background-position: -29px 0px;
+      background-position: -112px -100px;
       width: 14px;
       height: 12px;
       position: absolute;
@@ -2278,8 +2327,189 @@ button {
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       left: 22px; }
+    .about__link:hover, .about__link:focus {
+      color: #616161; }
 
-footer {
+.team {
+  padding: 100px 0 167px;
+  background: #080808; }
+  .team__title {
+    margin-bottom: 142px; }
+  .team__slider {
+    color: #fff; }
+  .team__img-wrap {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    background: grey;
+    margin: 0 auto 20px; }
+  .team__img {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 100%; }
+  .team__username {
+    display: block;
+    font-family: "OpenSansBold", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5px; }
+  .team__status {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px; }
+  .team__text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.714;
+    text-align: center;
+    padding: 0 15px; }
+  .team .slick-dots {
+    bottom: -83px; }
+    .team .slick-dots li {
+      width: 9px;
+      height: 9px;
+      margin: 0 6.5px; }
+      .team .slick-dots li.slick-active button {
+        background-color: #fcac45; }
+      .team .slick-dots li button {
+        background-color: white;
+        width: 9px;
+        height: 9px; }
+        .team .slick-dots li button:before {
+          width: 9px;
+          height: 9px; }
+
+.services {
+  padding: 100px 0; }
+  .services__slider {
+    margin-top: 101px; }
+    .services__slider_col {
+      padding: 0 35px; }
+    .services__slider_img {
+      width: 125px;
+      height: 125px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      border: 5px solid #fcac45;
+      margin: 0 auto 29px;
+      position: relative; }
+      .services__slider_img:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+      .services__slider_img-web:after {
+        background-image: url("../img/sprite/sprite.png");
+        background-position: 0px 0px;
+        width: 55px;
+        height: 55px; }
+      .services__slider_img-mobile:after {
+        background-image: url("../img/sprite/sprite.png");
+        background-position: -63px -70px;
+        width: 34px;
+        height: 55px; }
+      .services__slider_img-photography:after {
+        background-image: url("../img/sprite/sprite.png");
+        background-position: -70px 0px;
+        width: 57px;
+        height: 47px; }
+      .services__slider_img-marketing:after {
+        background-image: url("../img/sprite/sprite.png");
+        background-position: 0px -70px;
+        width: 48px;
+        height: 55px; }
+    .services__slider_title {
+      font-size: 1.563rem;
+      font-weight: 600;
+      margin-bottom: 18px; }
+    .services__slider_text {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center; }
+
+.clients {
+  background: #080808;
+  padding: 101px 0 212px; }
+  .clients__title {
+    margin-bottom: 148px; }
+
+.portfolio {
+  padding: 100px 0; }
+  .portfolio__header {
+    margin-bottom: 116px; }
+  .portfolio__wrap-filter {
+    margin-bottom: 35px; }
+  .portfolio__title-filter {
+    font-family: "OpenSansSemiBold", sans-serif;
+    color: #222;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.333; }
+  .portfolio__filter {
+    float: right; }
+    .portfolio__filter_radio {
+      padding-left: 15px;
+      border-left: 1px solid #6c6c6c;
+      margin-left: 15px;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.333; }
+      .portfolio__filter_radio:first-child {
+        padding-left: 0;
+        border-left: 0;
+        margin-left: 0; }
+      .portfolio__filter_radio.current {
+        font-family: "OpenSansSemiBold", sans-serif;
+        color: #222;
+        font-weight: 600; }
+  .portfolio__col {
+    padding: 15px; }
+  .portfolio__wrap-img {
+    display: inline-block;
+    width: 263px;
+    height: 237px; }
+  .portfolio__img {
+    -o-object-fit: none;
+       object-fit: none;
+    -o-object-position: 22% 0%;
+       object-position: 22% 0%;
+    height: 100%;
+    width: 100%; }
+
+.team .slick-dots,
+.clients .slick-dots {
+  bottom: -83px; }
+  .team .slick-dots li,
+  .clients .slick-dots li {
+    width: 9px;
+    height: 9px;
+    margin: 0 6.5px; }
+    .team .slick-dots li.slick-active button,
+    .clients .slick-dots li.slick-active button {
+      background-color: #fcac45; }
+    .team .slick-dots li button,
+    .clients .slick-dots li button {
+      background-color: white;
+      width: 9px;
+      height: 9px; }
+      .team .slick-dots li button:before,
+      .clients .slick-dots li button:before {
+        width: 9px;
+        height: 9px; }
+
+.footer {
   height: 1000px; }
 
 /*==========  Desktop First Method  ==========*/

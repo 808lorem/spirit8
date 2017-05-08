@@ -22,8 +22,20 @@
 // Стили верхнего баннера
 @import 'modules/_top-banner';
 
-// Стили "О нас"
+// Стили "About us"
 @import 'modules/_about';
+
+// Meet our team
+@import 'modules/_team';
+
+// take a look at our services
+@import 'modules/_services';
+
+// SOME OF OUR CLIENTS
+@import 'modules/_clients';
+
+// take a look at our work
+@import 'modules/_portfolio';
 
 // Стили главной страницы
 @import 'page/_index';

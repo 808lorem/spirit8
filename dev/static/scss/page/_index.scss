@@ -1,0 +1,25 @@
+.team,
+.clients {
+	.slick-dots {
+		bottom: -83px;
+		li {
+			width: 9px;
+			height: 9px;
+			margin: 0 6.5px;
+			&.slick-active {
+				button {
+					background-color: $bgOrange;
+				}
+			}
+			button {
+				background-color: white;
+				width: 9px;
+				height: 9px;
+				&:before {
+					width: 9px;
+					height: 9px;
+				}
+			}
+		}
+	}
+}

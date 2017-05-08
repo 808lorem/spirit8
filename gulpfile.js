@@ -65,7 +65,6 @@ gulp.task('scripts', ['libsclear'], function() {
 //			'dev/static/libs/bxslider/jquery.bxslider.min.js',
 //			'dev/static/libs/maskedinput/maskedinput.js',
 			'dev/static/libs/slick/slick.min.js',
-//			'dev/static/libs/owl-carousel/owl.carousel.min.js',
 //			'dev/static/libs/validate/jquery.validate.min.js',
         ])
         .pipe(concat('libs.min.js'))

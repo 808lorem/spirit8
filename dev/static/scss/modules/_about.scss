@@ -31,7 +31,7 @@
 			display: block;
 			height: 5px;
 			width: 99px;
-			background: #fcac45;
+			background: $bgOrange;
 			position: absolute;
 			bottom: -20px;
 		}
@@ -87,6 +87,10 @@
 			top: 50%;
 			transform: translateY(-50%);
 			left: 22px;
+		}
+		&:hover,
+		&:focus {
+			color: #616161;
 		}
 	}
 }
