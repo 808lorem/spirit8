@@ -1,0 +1,43 @@
+.testimonials {
+	background: $bgDark;
+	padding: 101px 0 143px;
+	&__title {
+		font-family: $fontTextSemiBold;
+		font-weight: 600;
+		margin-bottom: 153px;
+		&_light {
+			margin-bottom: 148px;
+			font-family: $fontTitleLight;
+			font-weight: 300;
+		}
+	}
+	&__slider {
+		&_slide {
+			padding: 0 112px;
+		}
+		&_text {
+			display: block;
+			font-family: $fontTextSemiBold;
+			color: $colorTestimonialsSlider;
+			font-size: 1.125rem;
+			font-weight: 600;
+			line-height: 1.333;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 49px;
+		}
+		&_author {
+			display: block;
+			color: $colorTestimonialsSliderAuthor;
+			font-family: $fontTextSemiBold;
+			font-size: 1.125rem;
+			font-weight: 600;
+			line-height: 1.333;
+			text-align: center;
+		}
+		&_post {
+			font-family: $fontTitleLight;
+			font-weight: 300;
+		}
+	}
+}

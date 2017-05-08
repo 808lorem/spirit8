@@ -1,0 +1,56 @@
+.contact {
+	&__container {
+		padding: 100px 210px;
+	}
+	&__form {
+		margin-top: 95px;
+		&_row {
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&_label {
+			display: inline-block;
+			color: $colorLabel;
+			font-size: 0.875rem;
+			font-weight: 400;
+			line-height: 1.714;
+			position: relative;
+			&:after {
+				content: '*';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: -9px;
+				color: #db0000;
+			}
+		}
+		&_input {
+			width: 100%;
+			border: 1px solid $bgInputBorder;
+			background: #ffffff;
+			height: 40px;
+			padding: 0 5px;
+		}
+		&_textarea {
+			width: 100%;
+			border: 1px solid $bgInputBorder;
+			background: #ffffff;
+			height: 163px;
+			padding: 5px;
+		}
+		&_submit {
+			float: right;
+			background: $bgOrange;
+			width: 165px;
+			height: 40px;
+			border: none;
+			font-family: $fontTextSemiBold;
+			font-size: 1rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: white;
+		}
+	}
+}
