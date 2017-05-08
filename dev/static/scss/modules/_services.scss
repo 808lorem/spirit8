@@ -1,0 +1,56 @@
+.services {
+	padding: 100px 0;
+	&__slider {
+		margin-top: 101px;
+		&_col {
+			padding: 0 35px;
+		}
+		&_img {
+			width: 125px;
+			height: 125px;
+			border-radius: 50%;
+			border: 5px solid $bgOrange;
+			margin: 0 auto 29px;
+			position: relative;
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&-web {
+				&:after {
+					@include sprite($s-services__web);
+				}
+			}
+			&-mobile {
+				&:after {
+					@include sprite($s-services__mobile);
+				}
+			}
+			&-photography {
+				&:after {
+					@include sprite($s-services__photography);
+				}
+			}
+			&-marketing {
+				&:after {
+					@include sprite($s-services__marketing);
+				}
+			}
+		}
+		&_title {
+			font-size: 1.563rem;
+			font-weight: 600;
+			margin-bottom: 18px;
+		}
+		&_text {
+			font-size: 0.875rem;
+			font-weight: 400;
+			line-height: 1.5;
+			text-align: center;
+		}
+	}
+}

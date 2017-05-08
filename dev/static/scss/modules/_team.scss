@@ -1,0 +1,67 @@
+.team {
+	padding: 100px 0 167px;
+	background: $bgDark;
+	&__title {
+		margin-bottom: 142px;
+	}
+	&__slider {
+		color: $colorTitleWhite;
+	}
+	&__img-wrap {
+		border-radius: 50%;
+		width: 128px;
+		height: 128px;
+		background: grey;
+		margin: 0 auto 20px;
+	}
+	&__img {
+		border-radius: 50%;
+		width: 100%;
+	}
+	&__username {
+		display: block;
+		font-family: $fontTextBold;
+		font-size: 1.25rem;
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	&__status {
+		display: block;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	&__text {
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.714;
+		text-align: center;
+		padding: 0 15px;
+	}
+	.slick-dots {
+		bottom: -83px;
+		li {
+			width: 9px;
+			height: 9px;
+			margin: 0 6.5px;
+			&.slick-active {
+				button {
+					background-color: $bgOrange;
+				}
+			}
+			button {
+				background-color: white;
+				width: 9px;
+				height: 9px;
+				&:before {
+					width: 9px;
+					height: 9px;
+				}
+			}
+		}
+	}
+}
