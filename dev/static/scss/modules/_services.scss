@@ -1,5 +1,12 @@
 .services {
 	padding: 100px 0;
+	&__arrow-prev {
+		@include sprite($s-left-arrow-black);
+	}
+	&__arrow-next {
+		@include sprite($s-right-arrow-black);
+		right: 0;
+	}
 	&__slider {
 		margin-top: 101px;
 		&_col {

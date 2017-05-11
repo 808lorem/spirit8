@@ -4,9 +4,35 @@
 	&__copyright {
 		font-size: 0.75rem;
 		font-weight: 400;
+		line-height: 3;
 		&_bold {
 			font-family: $fontTextBold;
 			font-weight: 700;
+		}
+	}
+	&__social {
+		float: right;
+		&_link {
+			margin-left: 13px;
+			display: inline-block;
+			&:first-child {
+				margin: 0;
+			}
+		}
+		&_facebook {
+			@include sprite($s-facebook);
+		}
+		&_twitter {
+			@include sprite($s-twitter);
+		}
+		&_google {
+			@include sprite($s-google);
+		}
+		&_linkedin {
+			@include sprite($s-linkedin);
+		}
+		&_dribbble {
+			@include sprite($s-dribbble);
 		}
 	}
 }

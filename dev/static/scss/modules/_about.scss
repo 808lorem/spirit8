@@ -1,8 +1,13 @@
 .about {
 	font-size: 1.125rem;
 	padding: 101px 0 5px;
+	&__wrap-img {
+		width: 100%;
+		max-width: 708px;
+		margin: 0 auto;
+	}
 	&__wrap-text {
-		padding: 0 98px;
+		padding: 0 0 50px 98px;
 	}
 	&__title {
 		color:  #222222;

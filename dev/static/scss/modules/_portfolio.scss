@@ -39,8 +39,9 @@
 		padding: 15px;
 	}
 	&__wrap-img {
-		display: inline-block;
-		width: 263px;
+		display: block;
+		margin: 0 auto;
+		max-width: 263px;
 		height: 237px;
 		position: relative;
 		&:hover {

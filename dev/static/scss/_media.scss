@@ -1,51 +1,301 @@
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
-}
-
-
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+	html {
+		line-height: 1;
+		font-size: 12px;
+	}
+	
+	.slider__arrow {
+		display: block;
+	}
+	
+	.header{
+		&__btn-menu {
+			display: block;
+			float: right;
+			@include sprite($s-header__btn-menu);
+		}
+		&__nav {
+			float: right;
+			&.active {
+				position: relative;
+				.header {
+					&__list {
+						display: block;
+						position: absolute;
+						top: 34px;
+						left: -90px;
+						z-index: 99;
+						padding: 20px;
+						background: $bgNavFixed;
+					}
+					&__item {
+						padding: 5px;
+					}
+				}
+			}
+		}
+		&__list {
+			display: none;
+		}
+		&__link {
+			margin: 0;
+			float: none;
+		}
+	}
+	#header-fixed {
+		height: 35px;
+	}
+	
+	.about {
+		&__img {
+			width: 100%;
+		}
+		&__wrap-text {
+			padding: 0 40px 50px;
+		}
+		&__title {
+			text-align: center;
+			&:before {
+				left: 50%;
+    			transform: translateX(-50%);
+			}
+			&:after {
+				left: 50%;
+    			transform: translateX(-50%);
+			}
+		}
+		&__text {
+			text-align: center;
+		}
+		&__nav {
+			margin: 0 auto;
+			display: table;
+		}
+		&__link {
+			margin: 0 auto;
+			width: 192px;
+			display: block;
+		}
+	}
+	
+	.testimonials {
+		&__slider {
+			&_slide {
+				padding: 0 50px;
+			}
+		}
+	}
+	
+	.contact {
+		&__container {
+			padding: 100px 20px;
+		}
+	}
+	
+	
+	.portfolio {
+		&__title-filter {
+			display: block;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		&__filter {
+			max-width: 286px;
+			margin: 0 auto;
+			float: none;
+			&_radio {
+				padding-left: 5px;
+				margin-left: 5px;
+			}
+		}
+		&__wrap-img {
+			max-width: 80%;
+		}
+		&__img {
+			object-position: 50% 0%;
+		}
+	}
+	
+	
+	.footer {
+		&__blocks {
+			width: 100%;
+			display: table;
+		}
+		&__block1 {
+			width: 100%;
+			display: table-footer-group;
+		}
+		&__block2 {
+			width: 100%;
+			display: table-header-group;
+		}
+		&__copyright {
+			margin: 0 auto;
+			width: 216px;
+			display: block;
+		}
+		&__social {
+			margin: 0 auto;
+			width: 209px;
+			float: none;
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+	html {
+		line-height: 1;
+		font-size: 14px;
+	}
+	
+	.slider__arrow {
+		display: none;
+	}
+	
+	.portfolio {
+		&__filter {
+			max-width: 400px;
+			&_radio {
+				padding-left: 15px;
+				margin-left: 15px;
+			}
+		}
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.header{
+		&__btn-menu {
+			display: none;
+		}
+		&__nav {
+			display: block;
+			&.active {
+				.header {
+					&__list {
+						display: block;
+						position: static;
+						padding: 0px;
+					}
+					&__item {
+						padding: 0;
+					}
+				}
+			}
+		}
+		
+		&__list {
+			display: block;
+			position: static;
+			padding: 0px;
+		}
+		&__link {
+			margin-left: 25px;
+			float: left;
+		}
+	}
+	#header-fixed {
+		height: 50px;
+	}
+	
+	.about {
+		&__wrap-text {
+			padding: 0 98px 50px;
+		}
+	}
+	
+	.testimonials {
+		&__slider {
+			&_slide {
+				padding: 0 112px;
+			}
+		}
+	}
+	
+	.contact {
+		&__container {
+			padding: 100px 98px;
+		}
+	}
+	
+	.portfolio {
+		&__title-filter {
+			display: block;
+			text-align: left;
+			margin-bottom: 0;
+		}
+		&__filter {
+			float: right;
+		}
+		&__wrap-img {
+			max-width: 263px;
+		}
+		&__img {
+			object-position: 22% 0%;
+		}
+	}
+	
+	
+	.footer {
+		&__blocks {
+			display: block;
+		}
+		&__block1 {
+			display: block;
+		}
+		&__block2 {
+			display: block;
+		}
+		&__copyright {
+			width: 100%;
+			display: inline-block;
+		}
+		&__social {
+			float: right;
+		}
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.about {
+		&__wrap-text {
+			padding: 0 0 50px 98px;
+		}
+		&__title {
+			text-align: left;
+			&:before {
+				left: 0;
+				transform: translateX(0);
+			}
+			&:after {
+				left: 0;
+				transform: translateX(0);
+			}
+		}
+		&__text {
+			text-align: left;
+		}
+		&__nav {
+			margin: 0;
+			display: block;
+		}
+		&__link {
+			margin: 0;
+		}
+	}
+	
+	.contact {
+		&__container {
+			padding: 100px 210px;
+		}
+	}
 }
 
  /* Large Devices, Wide Screens */

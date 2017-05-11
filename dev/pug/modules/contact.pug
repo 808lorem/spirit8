@@ -9,14 +9,14 @@ section.contact#contact
 			.row.contact__form_row
 				.col-lg-6
 					label(for="name").contact__form_label Name
-					input(type='text' name="name" id='name').contact__form_input
+					input(type='text' name="name" id='name' required).contact__form_input
 				.col-lg-6
 					label(for="email").contact__form_label Email address
-					input(type='email' name="email" id='email').contact__form_input
+					input(type='email' name="email" id='email' required).contact__form_input
 			.row.contact__form_row
 				.col-lg-12
 					label(for="message").contact__form_label Message
-					textarea(name="message" id="message").contact__form_textarea
+					textarea(name="message" id="message" required).contact__form_textarea
 			.row.contact__form_row
 				.col-lg-12
 					input(type='submit' value='send').contact__form_submit

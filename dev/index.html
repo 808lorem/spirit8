@@ -17,19 +17,21 @@
 <body>
   <div class="wrapper">
     <header class="header" id="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3"><a class="header__logo" href="javascript:void(0);"><span>Spirit8</span></a></div>
-          <div class="col-lg-9">
-            <nav class="header__nav">
-              <ul class="header__list"><a class="header__link active" href="javascript:void(0);">
-                  <li class="header__item">Home</li></a><a class="scroll-link header__link" href="#about">
-                  <li class="header__item">About</li></a><a class="scroll-link header__link" href="#services">
-                  <li class="header__item">SERVICES</li></a><a class="scroll-link header__link" href="#portfolio">
-                  <li class="header__item">portfolio</li></a><a class="scroll-link header__link" href="#testimonials">
-                  <li class="header__item">testimonials</li></a><a class="scroll-link header__link" href="#contact">
-                  <li class="header__item">CONTACT</li></a></ul>
-            </nav>
+      <div id="header-fixed">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-2"><a class="header__logo" href="javascript:void(0);"><span>Spirit8</span></a></div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-10"><a class="header__btn-menu"></a>
+              <nav class="header__nav">
+                <ul class="header__list"><a class="scroll-link header__link active" href="#header">
+                    <li class="header__item">Home</li></a><a class="scroll-link header__link" href="#about">
+                    <li class="header__item">About</li></a><a class="scroll-link header__link" href="#services">
+                    <li class="header__item">SERVICES</li></a><a class="scroll-link header__link" href="#portfolio">
+                    <li class="header__item">portfolio</li></a><a class="scroll-link header__link" href="#testimonials">
+                    <li class="header__item">testimonials</li></a><a class="scroll-link header__link" href="#contact">
+                    <li class="header__item">CONTACT</li></a></ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
@@ -42,169 +44,181 @@
       </div>
       <div class="top-banner__arrow"><a class="scroll-down top-banner__arrow_link" href="#"></a></div>
     </section>
-    <section class="about" id="about">
-      <div class="container about__container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about__wrap-img"><img class="about__img" src="static/img/general/about__img.png" alt="about-img"></div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about__wrap-text"><span class="about__title">Some words <span class="about__title_bold">about us</span></span>
-              <p class="about__text">We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
-              <ul class="about__list">
-                <li class="about__item">Mission - <span class="about__item_italic">We deliver uniqueness and quality</span></li>
-                <li class="about__item">Skills -<span class="about__item_italic">Delivering fast and excellent results</span></li>
-                <li class="about__item">Clients -<span class="about__item_italic">Satisfied clients thanks to our experience</span></li>
-              </ul><a class="scroll-link about__link" href="#portfolio">Browse our work</a>
+    <div id="about">
+      <section class="about">
+        <div class="container about__container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="about__wrap-img"><img class="about__img" src="static/img/general/about__img.png" alt="about-img"></div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="team__title title title__white">Meet <span class="title__bold">our team</span></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="team__slider">
-            <div class="js-slider__team">
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jason Statham"></div><span class="team__username">Jason Statham</span><span class="team__status">Knife designer</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Van Damme"></div><span class="team__username">Van Damme</span><span class="team__status">No English</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Sylvester Stallone"></div><span class="team__username">Sylvester Stallone</span><span class="team__status">Cigar Lover</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jet Li"></div><span class="team__username">Jet Li</span><span class="team__status">I need more money</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jason Statham"></div><span class="team__username">Jason Statham</span><span class="team__status">Knife designer</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Van Damme"></div><span class="team__username">Van Damme</span><span class="team__status">No English</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Sylvester Stallone"></div><span class="team__username">Sylvester Stallone</span><span class="team__status">Cigar Lover</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jet Li"></div><span class="team__username">Jet Li</span><span class="team__status">I need more money</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jason Statham"></div><span class="team__username">Jason Statham</span><span class="team__status">Knife designer</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Van Damme"></div><span class="team__username">Van Damme</span><span class="team__status">No English</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Sylvester Stallone"></div><span class="team__username">Sylvester Stallone</span><span class="team__status">Cigar Lover</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
-              </div>
-              <div class="col-lg-3">
-                  <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jet Li"></div><span class="team__username">Jet Li</span><span class="team__status">I need more money</span>
-                  <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="about__wrap-text"><span class="about__title">Some words <span class="about__title_bold">about us</span></span>
+                <p class="about__text">We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
+                <nav class="about__nav">
+                  <ul class="about__list">
+                    <li class="about__item">Mission - <span class="about__item_italic">We deliver uniqueness and quality</span></li>
+                    <li class="about__item">Skills -<span class="about__item_italic">Delivering fast and excellent results</span></li>
+                    <li class="about__item">Clients -<span class="about__item_italic">Satisfied clients thanks to our experience</span></li>
+                  </ul>
+                </nav><a class="scroll-link about__link" href="#portfolio">Browse our work</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="services" id="services">
-      <div class="container">
-        <div class="row">
-          <col-lg-12>
-            <h2 class="title">take a look at <span class="title__bold">our services</span></h2>
-            <p class="text__italic">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-          </col-lg-12>
-        </div>
-        <div class="row">
-          <div class="services__slider">
-            <div class="js-slider__services">
-              <div class="col-lg-3 services__slider_col">
-                <div class="services__slider_img services__slider_img-web"></div>
-                <h3 class="services__slider_title">Web design</h3>
-                <p class="services__slider_text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-              </div>
-              <div class="col-lg-3 services__slider_col">
-                <div class="services__slider_img services__slider_img-mobile"></div>
-                <h3 class="services__slider_title">Mobile apps</h3>
-                <p class="services__slider_text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-              </div>
-              <div class="col-lg-3 services__slider_col">
-                <div class="services__slider_img services__slider_img-photography"></div>
-                <h3 class="services__slider_title">PHOTOGRAPHY</h3>
-                <p class="services__slider_text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-              </div>
-              <div class="col-lg-3 services__slider_col">
-                <div class="services__slider_img services__slider_img-marketing"></div>
-                <h3 class="services__slider_title">marketing</h3>
-                <p class="services__slider_text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </section>
+      <section class="team">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="team__title title title__white">Meet <span class="title__bold">our team</span></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="team__slider slider__wrap">
+              <div class="slider__arrow team__arrow-prev"></div>
+              <div class="slider__arrow team__arrow-next"></div>
+              <div class="js-slider__team">
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jason Statham"></div><span class="team__username">Jason Statham</span><span class="team__status">Knife designer</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Van Damme"></div><span class="team__username">Van Damme</span><span class="team__status">No English</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Sylvester Stallone"></div><span class="team__username">Sylvester Stallone</span><span class="team__status">Cigar Lover</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jet Li"></div><span class="team__username">Jet Li</span><span class="team__status">I need more money</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jason Statham"></div><span class="team__username">Jason Statham</span><span class="team__status">Knife designer</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Van Damme"></div><span class="team__username">Van Damme</span><span class="team__status">No English</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Sylvester Stallone"></div><span class="team__username">Sylvester Stallone</span><span class="team__status">Cigar Lover</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jet Li"></div><span class="team__username">Jet Li</span><span class="team__status">I need more money</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jason Statham"></div><span class="team__username">Jason Statham</span><span class="team__status">Knife designer</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Van Damme"></div><span class="team__username">Van Damme</span><span class="team__status">No English</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Sylvester Stallone"></div><span class="team__username">Sylvester Stallone</span><span class="team__status">Cigar Lover</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team__img-wrap"><img class="team__img" src="static/img/content/man.png" alt="Jet Li"></div><span class="team__username">Jet Li</span><span class="team__status">I need more money</span>
+                    <p class="team__text">Do not seek to change what has come before. Seek to create that which has not.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="clients">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="clients__title title title__white">SOME OF <span class="title__bold">OUR CLIENTS</span></h2>
+      </section>
+    </div>
+    <div id="services">
+      <section class="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="title">take a look at <span class="title__bold">our services</span></h2>
+              <p class="text__italic">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="clients__slider">
-            <div class="js-slider__clients">
-              <div class="col-lg-2"><a href="http://www.chanel.com/ru_RU/" target="_blank"><img src="static/img/content/chanel.png" alt="chanel"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://www.zara.com/ru/" target="_blank"><img src="static/img/content/zara.png" alt="zara"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://www.guerlain.com/ru/ru" target="_blank"><img src="static/img/content/guerlain.png" alt="guerlain"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://lancome.ru/" target="_blank"><img src="static/img/content/lancome.png" alt="lancome"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://shop.lacoste.ru/" target="_blank"><img src="static/img/content/lacoste.png" alt="lacoste"></a>
-              </div>
-              <div class="col-lg-2"><a href="http://www.chanel.com/ru_RU/" target="_blank"><img src="static/img/content/chanel.png" alt="chanel"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://www.zara.com/ru/" target="_blank"><img src="static/img/content/zara.png" alt="zara"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://www.guerlain.com/ru/ru" target="_blank"><img src="static/img/content/guerlain.png" alt="guerlain"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://lancome.ru/" target="_blank"><img src="static/img/content/lancome.png" alt="lancome"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://shop.lacoste.ru/" target="_blank"><img src="static/img/content/lacoste.png" alt="lacoste"></a>
-              </div>
-              <div class="col-lg-2"><a href="http://www.chanel.com/ru_RU/" target="_blank"><img src="static/img/content/chanel.png" alt="chanel"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://www.zara.com/ru/" target="_blank"><img src="static/img/content/zara.png" alt="zara"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://www.guerlain.com/ru/ru" target="_blank"><img src="static/img/content/guerlain.png" alt="guerlain"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://lancome.ru/" target="_blank"><img src="static/img/content/lancome.png" alt="lancome"></a>
-              </div>
-              <div class="col-lg-2"><a href="https://shop.lacoste.ru/" target="_blank"><img src="static/img/content/lacoste.png" alt="lacoste"></a>
+          <div class="row">
+            <div class="services__slider slider__wrap">
+              <div class="slider__arrow services__arrow-prev"></div>
+              <div class="slider__arrow services__arrow-next"></div>
+              <div class="js-slider__services">
+                <div class="col-lg-3 services__slider_col">
+                  <div class="services__slider_img services__slider_img-web"></div>
+                  <h3 class="services__slider_title">Web design</h3>
+                  <p class="services__slider_text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="col-lg-3 services__slider_col">
+                  <div class="services__slider_img services__slider_img-mobile"></div>
+                  <h3 class="services__slider_title">Mobile apps</h3>
+                  <p class="services__slider_text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="col-lg-3 services__slider_col">
+                  <div class="services__slider_img services__slider_img-photography"></div>
+                  <h3 class="services__slider_title">PHOTOGRAPHY</h3>
+                  <p class="services__slider_text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="col-lg-3 services__slider_col">
+                  <div class="services__slider_img services__slider_img-marketing"></div>
+                  <h3 class="services__slider_title">marketing</h3>
+                  <p class="services__slider_text">The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="clients">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="clients__title title title__white">SOME OF <span class="title__bold">OUR CLIENTS</span></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="clients__slider slider__wrap">
+              <div class="slider__arrow clients__arrow-prev"></div>
+              <div class="slider__arrow clients__arrow-next"></div>
+              <div class="js-slider__clients">
+                <div class="col-lg-2"><a href="http://www.chanel.com/ru_RU/" target="_blank"><img src="static/img/content/chanel.png" alt="chanel"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://www.zara.com/ru/" target="_blank"><img src="static/img/content/zara.png" alt="zara"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://www.guerlain.com/ru/ru" target="_blank"><img src="static/img/content/guerlain.png" alt="guerlain"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://lancome.ru/" target="_blank"><img src="static/img/content/lancome.png" alt="lancome"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://shop.lacoste.ru/" target="_blank"><img src="static/img/content/lacoste.png" alt="lacoste"></a>
+                </div>
+                <div class="col-lg-2"><a href="http://www.chanel.com/ru_RU/" target="_blank"><img src="static/img/content/chanel.png" alt="chanel"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://www.zara.com/ru/" target="_blank"><img src="static/img/content/zara.png" alt="zara"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://www.guerlain.com/ru/ru" target="_blank"><img src="static/img/content/guerlain.png" alt="guerlain"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://lancome.ru/" target="_blank"><img src="static/img/content/lancome.png" alt="lancome"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://shop.lacoste.ru/" target="_blank"><img src="static/img/content/lacoste.png" alt="lacoste"></a>
+                </div>
+                <div class="col-lg-2"><a href="http://www.chanel.com/ru_RU/" target="_blank"><img src="static/img/content/chanel.png" alt="chanel"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://www.zara.com/ru/" target="_blank"><img src="static/img/content/zara.png" alt="zara"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://www.guerlain.com/ru/ru" target="_blank"><img src="static/img/content/guerlain.png" alt="guerlain"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://lancome.ru/" target="_blank"><img src="static/img/content/lancome.png" alt="lancome"></a>
+                </div>
+                <div class="col-lg-2"><a href="https://shop.lacoste.ru/" target="_blank"><img src="static/img/content/lacoste.png" alt="lacoste"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="row portfolio__header">
@@ -214,80 +228,80 @@
           </div>
         </div>
         <div class="row portfolio__wrap-filter">
-          <div class="col-lg-6"><span class="portfolio__title-filter">Filter by type</span></div>
-          <div class="col-lg-6">
+          <div class="col-md-6 col-sm-4"><span class="portfolio__title-filter">Filter by type</span></div>
+          <div class="col-md-6 col-sm-8">
             <nav class="portfolio__filter" id="flavor-nav"><a class="current portfolio__filter_radio" rel="all">All</a><a class="portfolio__filter_radio" rel="web">Web design</a><a class="portfolio__filter_radio" rel="mobile">Mobile design</a><a class="portfolio__filter_radio" rel="photograpy">Photograpy</a></nav>
           </div>
         </div>
         <div class="row">
           <div class="portfolio__wrap" id="all-flavors">
-              <div class="col-lg-3 portfolio__col flavor all web">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all web">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/web.jpg" alt="web">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Website design</span><a class="portfolio__more_btn popup-link" href="#img-web"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all web">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all web">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/web.jpg" alt="web">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Website design</span><a class="portfolio__more_btn popup-link" href="#img-web"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all web">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all web">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/web.jpg" alt="web">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Website design</span><a class="portfolio__more_btn popup-link" href="#img-web"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all web">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all web">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/web.jpg" alt="web">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Website design</span><a class="portfolio__more_btn popup-link" href="#img-web"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all photograpy">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all photograpy">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/photograpy.jpg" alt="photograpy">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Photograpy design</span><a class="portfolio__more_btn popup-link" href="#img-photograpy"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all photograpy">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all photograpy">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/photograpy.jpg" alt="photograpy">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Photograpy design</span><a class="portfolio__more_btn popup-link" href="#img-photograpy"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all photograpy">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all photograpy">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/photograpy.jpg" alt="photograpy">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Photograpy design</span><a class="portfolio__more_btn popup-link" href="#img-photograpy"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all photograpy">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all photograpy">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/photograpy.jpg" alt="photograpy">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Photograpy design</span><a class="portfolio__more_btn popup-link" href="#img-photograpy"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all mobile">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all mobile">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/mobile.jpg" alt="mobile">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Mobile design</span><a class="portfolio__more_btn popup-link" href="#img-mobile"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all mobile">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all mobile">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/mobile.jpg" alt="mobile">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Mobile design</span><a class="portfolio__more_btn popup-link" href="#img-mobile"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all mobile">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all mobile">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/mobile.jpg" alt="mobile">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Mobile design</span><a class="portfolio__more_btn popup-link" href="#img-mobile"></a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 portfolio__col flavor all mobile">
+              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 portfolio__col flavor all mobile">
                 <div class="portfolio__wrap-img"><img class="portfolio__img" src="static/img/content/mobile.jpg" alt="mobile">
                   <div class="portfolio__more"><span class="portfolio__more_title">Trend and fashion</span><span class="portfolio__more_descr">Mobile design</span><a class="portfolio__more_btn popup-link" href="#img-mobile"></a>
                   </div>
@@ -305,7 +319,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="testimonials__slider">
+          <div class="testimonials__slider slider__wrap">
+            <div class="slider__arrow testimonials__arrow-prev"></div>
+            <div class="slider__arrow testimonials__arrow-next"></div>
             <div class="js-slider__testimonials">
               <div class="col-lg-12">
                 <div class="testimonials__slider_slide"><span class="testimonials__slider_text">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</span><span class="testimonials__slider_author">Dean Martin, <span class="testimonials__slider_post">CEO Acme Inc.</span></span></div>
@@ -333,17 +349,17 @@
           <div class="row contact__form_row">
             <div class="col-lg-6">
               <label class="contact__form_label" for="name">Name</label>
-              <input class="contact__form_input" type="text" name="name" id="name">
+              <input class="contact__form_input" type="text" name="name" id="name" required>
             </div>
             <div class="col-lg-6">
               <label class="contact__form_label" for="email">Email address</label>
-              <input class="contact__form_input" type="email" name="email" id="email">
+              <input class="contact__form_input" type="email" name="email" id="email" required>
             </div>
           </div>
           <div class="row contact__form_row">
             <div class="col-lg-12">
               <label class="contact__form_label" for="message">Message</label>
-              <textarea class="contact__form_textarea" name="message" id="message"></textarea>
+              <textarea class="contact__form_textarea" name="message" id="message" required></textarea>
             </div>
           </div>
           <div class="row contact__form_row">
@@ -358,7 +374,16 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6"><span class="footer__copyright">ALL RIGHTS RESERVED. COPYRIGHT © 2014 <span class="footer__copyright_bold">SPIRIT8</span></span></div>
+        <div class="footer__blocks">
+          <div class="footer__block1">
+            <div class="col-sm-6 col-xs-12"><span class="footer__copyright">ALL RIGHTS RESERVED. COPYRIGHT © 2014 <span class="footer__copyright_bold">SPIRIT8</span></span></div>
+          </div>
+          <div class="footer__block2">
+            <div class="col-sm-6 col-xs-12">
+              <div class="footer__social"><a class="footer__social_link footer__social_facebook"></a><a class="footer__social_link footer__social_twitter"></a><a class="footer__social_link footer__social_google"></a><a class="footer__social_link footer__social_linkedin"></a><a class="footer__social_link footer__social_dribbble"></a></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>

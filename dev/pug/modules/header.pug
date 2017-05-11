@@ -1,21 +1,23 @@
 header.header#header
-	.container
-		.row
-			.col-lg-3
-				a(href="javascript:void(0);").header__logo
-					span Spirit8
-			.col-lg-9
-				nav.header__nav
-					ul.header__list
-						a(href="javascript:void(0);").header__link.active
-							li.header__item Home
-						a(href="#about").scroll-link.header__link
-							li.header__item About
-						a(href="#services").scroll-link.header__link
-							li.header__item SERVICES
-						a(href="#portfolio").scroll-link.header__link
-							li.header__item portfolio
-						a(href="#testimonials").scroll-link.header__link
-							li.header__item testimonials
-						a(href="#contact").scroll-link.header__link
-							li.header__item CONTACT
+	#header-fixed
+		.container
+			.row
+				.col-lg-3.col-md-3.col-sm-3.col-xs-2
+					a(href="javascript:void(0);").header__logo
+						span Spirit8
+				.col-lg-9.col-md-9.col-sm-9.col-xs-10
+					a.header__btn-menu
+					nav.header__nav
+						ul.header__list
+							a(href="#header").scroll-link.header__link.active
+								li.header__item Home
+							a(href="#about").scroll-link.header__link
+								li.header__item About
+							a(href="#services").scroll-link.header__link
+								li.header__item SERVICES
+							a(href="#portfolio").scroll-link.header__link
+								li.header__item portfolio
+							a(href="#testimonials").scroll-link.header__link
+								li.header__item testimonials
+							a(href="#contact").scroll-link.header__link
+								li.header__item CONTACT

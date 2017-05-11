@@ -1,12 +1,11 @@
 ;
 // Начинать писать отсюда!!!!
 $(document).ready(function(){
-	$('.header__link').click(function() {
-		$('.active').removeClass('active');
-		$(this).addClass('active');
+	
+	$('.header__btn-menu').click(function() {
+		$('.header__nav').toggleClass('active');
 	});
-	
-	
+
 	// Определяю оптимальную высоту top-banner
 	var headerPaddingTop = parseFloat($('#header').css('padding-top')),
 		headerPaddingBottom = parseFloat($('#header').css('padding-bottom')),
@@ -52,58 +51,125 @@ $(document).ready(function(){
 	$('.js-slider__team').slick({
 		dots: true,
 		arrows: false,
+		prevArrow: '.team__arrow-prev',
+		nextArrow: '.team__arrow-next',
 		speed: 900,
 		slidesToShow: 4,
 		slidesToScroll: 4,
-//		responsive: [
-//		{
-//		  breakpoint: 1024,
-//		  settings: {
-//			slidesToShow: 3,
-//			slidesToScroll: 3,
-//			infinite: true,
-//			dots: true
-//		  }
-//		}
-//		]
+		responsive: [{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				dots: false,
+				arrows: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		}]
+	});
+	
+	
+	$('.js-slider__services').slick({
+		infinite: false,
+		speed: 900,
+		arrows: false,
+		prevArrow: '.services__arrow-prev',
+		nextArrow: '.services__arrow-next',
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		responsive: [{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				dots: false,
+				arrows: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		}]
 	});
 	
 	$('.js-slider__clients').slick({
 		dots: true,
-		arrows: false,
 		speed: 900,
+		arrows: false,
+		prevArrow: '.clients__arrow-prev',
+		nextArrow: '.clients__arrow-next',
 		slidesToShow: 5,
 		slidesToScroll: 5,
-//		responsive: [
-//		{
-//		  breakpoint: 1024,
-//		  settings: {
-//			slidesToShow: 3,
-//			slidesToScroll: 3,
-//			infinite: true,
-//			dots: true
-//		  }
-//		}
-//		]
+		responsive: [{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 4,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				dots: false,
+				arrows: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		}]
 	});
 	
 	$('.js-slider__testimonials').slick({
 		dots: true,
-		arrows: false,
 		speed: 900,
+		arrows: false,
+		prevArrow: '.testimonials__arrow-prev',
+		nextArrow: '.testimonials__arrow-next',
 		slidesToShow: 1,
 		slidesToScroll: 1,
-//		responsive: [
-//		{
-//		  breakpoint: 1024,
-//		  settings: {
-//			slidesToShow: 3,
-//			slidesToScroll: 3,
-//			infinite: true,
-//			dots: true
-//		  }
-//		}
-//		]
+		responsive: [{
+			breakpoint: 480,
+			settings: {
+				arrows: true,
+				dots: false,
+			}
+		}]
 	});
 	
 	
@@ -131,4 +197,58 @@ $(document).ready(function(){
 	$('.popup-link').magnificPopup({
 		type: 'inline',
 	});
+	
+	
+	jQuery(function($) {
+		$(window).scroll(function(){
+			var h_win = $(window).height() - $('#header-fixed').height();
+
+			if($(this).scrollTop()>h_win){
+				$('#header-fixed').addClass('fixed');
+			}
+			else if ($(this).scrollTop()<h_win){
+				$('#header-fixed').removeClass('fixed');
+			}
+		});
+	});
+	
+	var menu_selector = ".header__nav"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню.
+ 
+function onScroll(){
+    var scroll_top = $(document).scrollTop();
+    $(menu_selector + " a").each(function(){
+        var hash = $(this).attr("href");
+        var target = $(hash);
+        if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+            $(menu_selector + " a.active").removeClass("active");
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+        }
+    });
+}
+ 
+$(document).ready(function () {
+ 
+    $(document).on("scroll", onScroll);
+ 
+    $("a[href^=#]").click(function(e){
+        e.preventDefault();
+ 
+        $(document).off("scroll");
+        $(menu_selector + " a.active").removeClass("active");
+        $(this).addClass("active");
+        var hash = $(this).attr("href");
+        var target = $(hash);
+ 
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, 500, function(){
+            window.location.hash = hash;
+            $(document).on("scroll", onScroll);
+        });
+ 
+    });
+ 
+});
 });

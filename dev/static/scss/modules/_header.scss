@@ -6,11 +6,8 @@
 	padding: 57px 0;
 	box-sizing: padding-box;
 	&__logo {
-		font-size: 1.5rem;
+		font-size: 24px;
 		color: $colorHeader;
-	}
-	&__nav {
-		float: right;
 	}
 	&__link {
 		margin-left: 25px;
@@ -18,8 +15,12 @@
 		color: $colorHeader;
 		position: relative;
 		line-height: 1.714;
+		&:first-child {
+			margin: 0;
+		}
 		&:focus,
-		&:hover {
+		&:hover,
+		&:visited {
 			color: $colorHeader;
 		}
 		&.active {
@@ -47,5 +48,16 @@
 			}
 		}
 	}
-	
 }
+#header-fixed {
+	height: 50px;
+	&.fixed {
+		position: fixed;
+		top: 0;
+		z-index: 999;
+		width: 100%;
+		background: $bgNavFixed;
+		padding: 1px;
+	}
+}
+	

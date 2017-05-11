@@ -23,8 +23,30 @@
 			}
 		}
 	}
+	&__arrow-prev {
+		@include sprite($s-left-arrow);
+	}
+	&__arrow-next {
+		@include sprite($s-right-arrow);
+		right: 0;
+	}
 }
 
+.slick-slide img {
+    margin: 0 auto;
+}
+
+.slider {
+	&__wrap {
+		position: relative;
+	}
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 99;
+	}
+}
 
 .popup {
 	position: relative;
