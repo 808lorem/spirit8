@@ -157,6 +157,10 @@ button {
 	margin: 0 auto;
 }
 
+.wrapper {
+	overflow: hidden;
+}
+
 *::-webkit-input-placeholder {
 	opacity: 1;
 }

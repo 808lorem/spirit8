@@ -2503,6 +2503,9 @@ button {
   max-width: 1170px;
   margin: 0 auto; }
 
+.wrapper {
+  overflow: hidden; }
+
 *::-webkit-input-placeholder {
   opacity: 1; }
 
@@ -2520,12 +2523,16 @@ button {
   text-transform: uppercase;
   color: #fff;
   background: #080808;
-  padding: 57px 0;
+  padding: 57px 0 0;
   -webkit-box-sizing: padding-box;
           box-sizing: padding-box; }
   .header__logo {
     font-size: 24px;
     color: #fff; }
+    .header__logo:hover, .header__logo:focus, .header__logo:visited {
+      color: #fff;
+      text-decoration: none;
+      outline: none; }
   .header__link {
     margin-left: 25px;
     float: left;
@@ -2561,15 +2568,13 @@ button {
           -ms-transform: translateX(-50%);
               transform: translateX(-50%); }
 
-#header-fixed {
+#header-fixed.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: rgba(8, 8, 8, 0.5);
   height: 50px; }
-  #header-fixed.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    background: rgba(8, 8, 8, 0.5);
-    padding: 1px; }
 
 .top-banner {
   background: #080808;
@@ -2600,7 +2605,8 @@ button {
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
-    display: block; }
+    display: block;
+    text-transform: none; }
     .top-banner__descr_bold {
       font-family: "OpenSansBold", sans-serif; }
   .top-banner__arrow {
@@ -3160,8 +3166,8 @@ button {
       .header__nav.active .header__list {
         display: block;
         position: absolute;
-        top: 34px;
-        left: -90px;
+        top: 50px;
+        right: -47px;
         z-index: 99;
         padding: 20px;
         background: rgba(8, 8, 8, 0.5); }
@@ -3230,7 +3236,7 @@ button {
     display: table-header-group; }
   .footer__copyright {
     margin: 0 auto;
-    width: 216px;
+    text-align: center;
     display: block; }
   .footer__social {
     margin: 0 auto;
@@ -3295,7 +3301,7 @@ button {
   .footer__block2 {
     display: block; }
   .footer__copyright {
-    width: 100%;
+    text-align: left;
     display: inline-block; }
   .footer__social {
     float: right; } }

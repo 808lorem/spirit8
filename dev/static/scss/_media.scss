@@ -25,8 +25,8 @@
 					&__list {
 						display: block;
 						position: absolute;
-						top: 34px;
-						left: -90px;
+						top: 50px;
+						right: -47px;
 						z-index: 99;
 						padding: 20px;
 						background: $bgNavFixed;
@@ -135,7 +135,7 @@
 		}
 		&__copyright {
 			margin: 0 auto;
-			width: 216px;
+			text-align: center;
 			display: block;
 		}
 		&__social {
@@ -253,7 +253,7 @@
 			display: block;
 		}
 		&__copyright {
-			width: 100%;
+			text-align: left;
 			display: inline-block;
 		}
 		&__social {

@@ -23,12 +23,13 @@
 		}
 	}
 	&__descr {
-		color:  rgba(255, 255, 255, 0.74902);
+		color: rgba(255, 255, 255, 0.74902);
 		font-size: 1.25rem;
 		font-weight: 400;
 		line-height: 1.2;
 		text-align: center;
 		display: block;
+		text-transform: none;
 		&_bold {
 			font-family: $fontTextBold;
 		}

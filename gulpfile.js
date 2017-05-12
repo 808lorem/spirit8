@@ -139,6 +139,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
     var buildFonts = gulp.src('dev/static/fonts/**/*')
         .pipe(gulp.dest('product/static/fonts'));
 
+	var mainJsNano = gulp.src('dev/static/js/main.js')
+		.pipe(uglify())
+		.pipe(gulp.dest('dev/static/js'));
     var buildJs = gulp.src('dev/static/js/**.js')
         .pipe(gulp.dest('product/static/js'));
 
